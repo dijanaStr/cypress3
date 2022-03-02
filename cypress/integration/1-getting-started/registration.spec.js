@@ -64,7 +64,7 @@ describe('registration case', () => {
         cy.get('a[href="/register"]').click()
     });
     
-    it('register with wrong password conformation', () => {
+    it('register with wrong password confirmation', () => {
         cy.get('input[id="first-name"]').type('Dijana')
         cy.get('input[id="last-name"]').type('Strbac')
         cy.get('input[id="email"]').type('dijana.strbac93+1@gmail.com')
