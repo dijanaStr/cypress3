@@ -223,7 +223,7 @@ describe('registration case', () => {
     });
     
     it('register with password without number', () => {
-        cy.get('input[id="first-name"]').type('DIJANA')
+        cy.get('input[id="first-name"]').type('Dijana')
         cy.get('input[id="last-name"]').type('Strbac')
         cy.get('input[id="email"]').type('dijana.strbac93+1@gmail.com')
         cy.get('input[id="password"]').type('dijanastr')
@@ -243,7 +243,7 @@ describe('registration case', () => {
     });
     
     it('register with password that contain less then 8 characters', () => {
-        cy.get('input[id="first-name"]').type('DIJANA')
+        cy.get('input[id="first-name"]').type('Dijana')
         cy.get('input[id="last-name"]').type('Strbac')
         cy.get('input[id="email"]').type('dijana.strbac93+1@gmail.com')
         cy.get('input[id="password"]').type('dijana1')
